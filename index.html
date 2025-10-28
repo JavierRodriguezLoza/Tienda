@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperio Betta - Tienda de Peces Betta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-large">
+                    <h1>Imperio Betta</h1>
+                    <div class="logo-subtitle">Tienda de Peces Betta de Competición</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <h1>Imperio Betta</h1>
+                    <div class="hero-subtitle">Los Mejores Peces Betta de Cuba</div>
+                </div>
+                <p class="hero-description">Especialistas en Bettas de competición. Ganador del primer lugar en el Betta Show Nacional.</p>
+                <a href="#catalogo" class="btn-primary">Ver Catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogo" class="catalogo">
+        <div class="container">
+            <h2 class="section-title">Nuestros Peces Betta</h2>
+            <p class="section-subtitle">Descubre nuestra exclusiva selección de peces betta de alta calidad</p>
+            
+<div class="filtros">
+    <div class="filtro-grupo">
+        <label for="filtro-tipo">Tipo:</label>
+        <select id="filtro-tipo">
+            <option value="todos">Todos los tipos</option>
+            <option value="splendens">Splendens</option>
+            <option value="halfmoon">Media Luna</option>
+            <option value="crowntail">Corona</option>
+            <option value="plakat">Plakat</option>
+            <option value="doubletail">Doble Cola</option>
+            <option value="dumbo">Dumbo</option>
+        </select>
+    </div>
+    
+    <div class="filtro-grupo">
+        <label for="filtro-color">Color:</label>
+        <select id="filtro-color">
+            <option value="todos">Todos los colores</option>
+            <option value="rojo">Rojo</option>
+            <option value="azul">Azul</option>
+            <option value="turquesa">Turquesa</option>
+            <option value="acero">Acero</option>
+            <option value="opaco">Opaco</option>
+            <option value="negro">Negro</option>
+            <option value="naranja">Naranja</option>
+            <option value="blanco">Blanco</option>
+            <option value="verde">Verde</option>
+            <option value="violeta">Violeta</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="rosa">Rosa</option>
+        </select>
+    </div>
+    
+    <div class="filtro-grupo">
+        <label for="filtro-precio">Precio máximo:</label>
+        <input type="range" id="filtro-precio" min="0" max="2000" value="2000" step="100">
+        <span id="valor-precio">Cualquier precio</span>
+    </div>
+    
+    <button id="btn-limpiar-filtros" class="btn-secondary">Limpiar Filtros</button>
+</div>
+            
+            <div class="productos-grid" id="productos-grid">
+                <!-- Los productos se cargan dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="ubicacion">
+        <div class="container">
+            <h2 class="section-title">Nuestra Ubicación</h2>
+            <div class="ubicacion-content">
+                <div class="info-ubicacion">
+                    <div class="ubicacion-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Visítanos</h3>
+                        <p>Calle 5ta entre 4ta y Araguren</p>
+                        <p>Casino Deportivo, Cerro, La Habana</p>
+                    </div>
+                    
+                    <div class="ubicacion-card">
+                        <h3><i class="fas fa-phone"></i> Contacto</h3>
+                        <p>+53 5 6374820</p>
+                        <p class="email-text">marlon.garcia.sosa@gmail.com</p>
+                    </div>
+                    
+                    <div class="ubicacion-card">
+                        <h3><i class="fas fa-truck"></i> Envíos</h3>
+                        <p>Envíos a toda La Habana</p>
+                        <p>Entrega en 24-48 horas</p>
+                    </div>
+                    
+                    <div class="ubicacion-card">
+                        <h3><i class="fas fa-money-bill-wave"></i> Pagos</h3>
+                        <p>Efectivo</p>
+                        <p>Transferencia Bancaria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contacto-content">
+                <div class="info-contacto">
+                    <h3 class="center">Información de Contacto</h3>
+                    <p class="contacto-intro">¿Tienes preguntas sobre nuestros peces betta? No dudes en contactarnos directamente.</p>
+                    
+                    <div class="contacto-grid">
+                        <div class="contacto-item">
+                            <div class="contacto-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contacto-info">
+                                <h4>Teléfono</h4>
+                                <p>+53 5 6374820</p>
+                                <small>Puede llamar o escribir a cualquier hora, cualquier día</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contacto-item">
+                            <div class="contacto-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contacto-info">
+                                <h4>Email</h4>
+                                <p class="email-text">marlon.garcia.sosa@gmail.com</p>
+                                <small>Respondemos en menos de 24 horas</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contacto-item">
+                            <div class="contacto-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contacto-info">
+                                <h4>Dirección</h4>
+                                <p>Calle 5ta entre 4ta y Araguren</p>
+                                <p>Casino Deportivo, Cerro, La Habana</p>
+                            </div>
+                        </div>
+
+                        <div class="contacto-item">
+                            <div class="contacto-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contacto-info">
+                                <h4>Horario</h4>
+                                <p>Llamar antes de venir</p>
+                                <p>Lunes a Sábado: 9:00 AM - 7:00 PM</p>
+                                <p>Domingo: 10:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Imperio Betta</h3>
+                    <p>Tienda especializada en peces betta de competición. Calidad y experiencia garantizadas.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#catalogo">Catálogo</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contacto Directo</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Cerro, La Habana</p>
+                    <p><i class="fas fa-phone"></i> +53 5 6374820</p>
+                    <p class="email-text"><i class="fas fa-envelope"></i> marlon.garcia.sosa@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Imperio Betta. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
